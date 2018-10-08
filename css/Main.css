@@ -84,7 +84,7 @@ width: 310px;
 	height: 320px;
 	float: left;
     margin: 0 25px;    margin-bottom: 30px;
-    background-size: cover;
+    background-size: cover;border-radius: 10px;
 }
 
 .main-menu-matrix table {
@@ -93,7 +93,7 @@ width: 310px;
 
 .main-menu-matrix table button {
 	
-	background-color: #00000059;
+	background-color: #00000059;border-radius: 10px;
 	width: 310px;
 	height: 320px;
 	border: none;
