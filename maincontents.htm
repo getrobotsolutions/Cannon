@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <!--<script language="JavaScript" type="text/javascript" src="maincontents.js"></script>-->
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="jquery-code-scanner.js"></script>
+    <script type="text/javascript" src="code-scanner.js"></script>
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+
+
+<section class="main-content" style="height: 1500px;border: none;">
+   <div class="header" style="width: 1080; height: 420px;display: block;background-color: #ca0405;">
+     <div class="first-block" style="width: 980px;background-color: white;height: 335px;
+    position: absolute;left: 50px;top: 220px;border-radius: 50px;
+    -webkit-box-shadow: 0px 35px 5px 2px rgb(15, 9, 12);
+    -moz-box-shadow: 0px 35px 5px 2px rgb(15, 9, 12);
+    box-shadow: 0px 35px 5px 2px rgb(15, 9, 12);
+    font-size: 75PX;
+    font-weight: bold;
+    padding-top: 80px;
+    text-align: center;
+    color: black;
+    ">
+       PLEASE SCAN YOUR BADGE TO BEGIN<img src="assets/arrow.png" width="200">
+     </div>
+   </div>
+    <img src="assets/Canon-logo.PNG" style="position: absolute;top: 790px;left: 20px;width: 1026px;">
+    
+</section>
+
+<footer style="background-color: #ca0405;height: 420px;">
+
+  <!--<div class="second-block" style="width: 900px;background-color: white;height: 270px;
+    position: absolute;left: 90px;bottom: 200px;border-radius: 50px;
+    -webkit-box-shadow: 0px -40px 5px 2px rgba(3,105,153,1);
+    -moz-box-shadow: 0px -40px 5px 2px rgba(3,105,153,1);
+    box-shadow: 0px -40px 5px 2px rgba(3,105,153,1);
+    font-size: 75PX;font-weight: bold;padding-top: 40px;text-align: center;color: black;
+    ">
+       PRESS HERE TO CONTINUE WITHOUT SCANNING
+  </div>-->
+  <form class="" style="     position: absolute;
+    bottom: 100px;   margin-left: 300px;">
+                <div >
+                    <label class="" for="code-scan"></label>
+                    <div class="" style="">
+                        <textarea id="bar_code" style="" >CSICSI|5100356|Meredith|Courtemanche</textarea>
+                        <button id="submit" class="submit">Click</button>
+                    </div>
+                </div>
+            </form>
+</footer>
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+
+</div>
+
+<script type="application/javascript">
+    if(readCookie("CurrentLanguage") === "English")
+    {
+        LanguageChange('english');
+    }
+    else if(readCookie("CurrentLanguage") === "Spanish")
+    {
+        LanguageChange('spanish');
+    }
+
+</script>
+<style type="text/css">
+        textarea{
+            color: black;
+        }
+</style>
+
+</body>
+</html>
