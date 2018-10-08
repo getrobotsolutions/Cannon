@@ -92,7 +92,8 @@ nav .nav-language button {
 }
 
 .main-menu-matrix table button {
-	
+	margin-bottom: 30px;
+    padding: 0;
 	border-radius: 10px;
 	width: 310px;
 	height: 320px;
@@ -105,6 +106,7 @@ nav .nav-language button {
 	border-color: white;
 }
 .main-menu-matrix table button a{
+	border-radius: 10px;
 	color: white !important;
 	font-weight: bold;
 	display: block;
