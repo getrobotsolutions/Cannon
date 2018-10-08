@@ -115,7 +115,7 @@ nav .nav-language button {
     width: 310px;
     height: 320px;
     padding-top: 85px;
-    background-color: #000000b5;
+    background-color: rgba(0, 0, 0, 0.55);
 
 }
 
