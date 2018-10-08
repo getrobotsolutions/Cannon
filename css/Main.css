@@ -93,7 +93,7 @@ width: 310px;
 
 .main-menu-matrix table button {
 	
-	background-color: #00000059;border-radius: 10px;
+	border-radius: 10px;
 	width: 310px;
 	height: 320px;
 	border: none;
@@ -110,6 +110,10 @@ width: 310px;
 	display: block;
 	font-size: 40px;
     line-height: 40px;
+    width: 310px;
+    height: 320px;
+    padding-top: 85px;
+    background-color: #00000059;
 
 }
 
