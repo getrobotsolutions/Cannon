@@ -80,11 +80,11 @@ nav .nav-language button {
 	padding-bottom: 100px;
 }
 .main-content .main-menu-matrix td{
-width: 310px;
+/*width: 310px;
 	height: 320px;
 	float: left;
     margin: 0 25px;    margin-bottom: 30px;
-    background-size: cover;border-radius: 10px;
+    background-size: cover;border-radius: 10px;*/
 }
 
 .main-menu-matrix table {
@@ -100,7 +100,7 @@ width: 310px;
 	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 	
 	font-size: 40px;
-	text-align: center;
+	text-align: center;background-size: cover;
 	
 	border-color: white;
 }
