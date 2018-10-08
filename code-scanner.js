@@ -14,7 +14,7 @@ function CheckVal(){
   else{
     alert(csiMarker + badge_number + lastName + companyName);
         //window.external.PlaySpeech("welcome" +firstName + " " + lastName +", welcome to our booth."); 
-        //location.href = "maincontents.htm";             
+        location.href = "main.htm";             
             var dataString =  { 'CsiMarker' : csiMarker, 'BadgeNumber' : badge_number,  'LastName' : lastName, 'CompanyName' : companyName};
             $.ajax({
               url:"https://robotaisolutions.com/amgen/cannonApi.php",

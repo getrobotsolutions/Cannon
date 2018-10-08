@@ -38,7 +38,7 @@ header .logo img {
 
 nav {
 	height: 60px;
-	background-color: #21206c;
+	background-color: #b90b02;
 }
 
 nav .nav-language {
@@ -70,13 +70,13 @@ nav .nav-language button {
 	background-size: cover;*/
 	height: 60%;
 	border-bottom:10px solid;
-	border-bottom-color: #21206c;
+	border-bottom-color: #b90b02;
 }
 
 .main-content .main-menu-matrix {
 	width: 100%;
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 40px;
 	padding-bottom: 100px;
 }
 
@@ -85,9 +85,9 @@ nav .nav-language button {
 }
 
 .main-menu-matrix table button {
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 	//background-color:  #0068B3;
-	background-color:  #2fb8dc;
+	background-color:  #b90b02;
 	width: 290px;
 	height: 300px;
 	border: none;
@@ -99,7 +99,7 @@ nav .nav-language button {
 	border-color: white;
 }
 .main-menu-matrix table button a{
-	color: #21206c !important;
+	color: white !important;
 	font-weight: bold;
 
 }
@@ -275,14 +275,14 @@ a.button {
 	float: left;
 }
 .title{
-	background-color: #21206c;
+	background-color: #b90b02;
 	height: 90px;
     font-size: 60px;
     line-height: 85px;
     width: 80%;
     margin: auto;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 iframe{border: none;}
 
