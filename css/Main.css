@@ -79,23 +79,29 @@ nav .nav-language button {
 	padding-top: 30px;
 	padding-bottom: 100px;
 }
+.main-content .main-menu-matrix td{
+width: 310px;
+	height: 320px;
+	float: left;
+    margin: 0 25px;    margin-bottom: 30px;
+    background-size: cover;
+}
 
 .main-menu-matrix table {
 	width: 100%;
 }
 
 .main-menu-matrix table button {
-	margin-bottom: 30px;
-	//background-color:  #0068B3;
-	background-color:  #b90b02;
+	
+	background-color: #00000059;
 	width: 310px;
 	height: 320px;
 	border: none;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 	
 	font-size: 40px;
 	text-align: center;
-	border: solid;
+	
 	border-color: white;
 }
 .main-menu-matrix table button a{
