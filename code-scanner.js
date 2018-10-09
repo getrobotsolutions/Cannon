@@ -1,6 +1,6 @@
 
-function CheckVal(){
-    var bar_code = $("#bar_code").val(); 
+function CheckVal(bar_code){
+    //var bar_code = $("#bar_code").val(); 
     var len = bar_code.length;
     var parts = bar_code.split("|");
     var csiMarker=parts[0];
@@ -53,24 +53,21 @@ $(document).ready(function() {
                     
     if(bar_code.length>0){
                     
-      CheckVal();
-                         
-      
+      CheckVal(bar_code);
 
     }
     else{
-      location.reload();
-      /*window.setTimeout(function() {
+      window.setTimeout(function() {
         var bar_code = $("#bar_code").val();
-        //CheckVal(bar_code);
-      }, 5000);*/
+        CheckVal(bar_code);
+      }, 3000);
     }
                                          
   });
                   
   setTimeout(function() {
     $('#submit').trigger('click');
-  }, 5000);
+  }, 3000);
 
                  
 });
