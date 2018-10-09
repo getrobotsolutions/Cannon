@@ -8,8 +8,8 @@ function CheckVal(bar_code){
     var lastName=parts[2];
     var companyName=parts[3];
   if(csiMarker==null || badge_number==null || lastName==null || companyName== null){
-    alert("Please Scan badge again");
-    location.reload();
+    //alert("Please Scan badge again");
+    //location.reload();
   }
   else{
     alert(csiMarker + badge_number + lastName + companyName);
