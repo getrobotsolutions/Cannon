@@ -1,5 +1,4 @@
-﻿document.addEventListener('contextmenu', event => event.preventDefault());
-var speak = new Array( );
+﻿var speak = new Array( );
 
 
         speak[0] = "Take a look at our robot at some of our previous trade shows";
