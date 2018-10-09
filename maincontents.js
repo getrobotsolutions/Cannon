@@ -8,8 +8,9 @@
         speak[4] = "Find out what classes you need for your major.";
         speak[5] = "";
         speak[6] = "Say Cheese! ";
-        speak[7] = "Smile! You are about to become a robot.";
+        speak[7] = "";
         speak[8] = "Pick a song and let’s boogie!";
+        speak[9] = "Smile! You are about to become a robot.";
 
 //window.external.ChangeLanguage("en-us");
 function FC_ContentsCall(strContentsName, strLanguage)
@@ -23,33 +24,49 @@ function FC_ContentsCall(strContentsName, strLanguage)
             PlaySpeech("Hi, I'm Tracey the trade show robot. I can be rented for trade shows and events. Press a button on my screen to begin");
             break;
         case "Home":
-           location.href = "../../maincontents.htm";
+           location.href = "../../main.htm";
             break;
-        case "Projects":
-            PlaySpeech(speak[0]);
-            location.href = "Contents/Projects/index.html";
+        case "HFV":
+            //PlaySpeech(speak[0]);
+            location.href = "Contents/HFV/index.html";
             break;
-        case "Videos":
-            PlaySpeech(speak[1]);
-            location.href = "Contents/Video/index.html";
+        case "Touchstone":
+            //PlaySpeech(speak[1]);
+            location.href = "Contents/Touchstone/index.html";
             break;
-        case "Slot-machine":
-            PlaySpeech(speak[2]);
-            location.href = "Contents/SlotMachine/index.html";
+        case "Van-Vilet":
+            //PlaySpeech(speak[2]);
+            location.href = "Contents/Van-Vilet/index.html";
+            break;
+        case "Spectrum":
+            //PlaySpeech(speak[3]);
+            location.href = "Contents/Spectrum/index.html";
+            break;
+        case "Color-Reflections":
+            //PlaySpeech(speak[4]);
+            location.href = "Contents/Color-Reflections/index.html";
+            break;
+        case "Group-Imaging":
+            //PlaySpeech(speak[5]);
+            location.href = "Contents/Group-Imaging/index.html";
             break;
         
 
         case "Selfie":
-            PlaySpeech(speak[6]);
+            //PlaySpeech(speak[6]);
             location.href = "Contents/Selfie/index.html";
             break;
-        case "Avatar":
-            PlaySpeech(speak[7]);
-            location.href = "Contents/RobotAvatar/index.htm";
+        case "Slot-machine":
+            //PlaySpeech(speak[7]);
+            location.href = "Contents/SlotMachine/index.html";
             break;
         case "Dance":
-            PlaySpeech(speak[8]);
+            //PlaySpeech(speak[8]);
             location.href = "Contents/Dance/index.html";
+            break;
+        case "Avatar":
+            //PlaySpeech(speak[9]);
+            location.href = "Contents/RobotAvatar/index.htm";
             break;
         case "Config":
             location.href = "Config/Config.htm";
