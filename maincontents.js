@@ -217,25 +217,25 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
             window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Come here please and touch my screen to win a prize.");//I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("Hey there, have you seen the Océ Colorado--the hottest roll in town?");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
     if(btn_info[1] == '1'){
         window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Hi, I'm Tracey the tradeshow robot.  I can be rented for tradeshow and events.  Press a button on my screen to begin.");
+        window.external.PlaySpeech("Hey would you like to stop babysitting your printer? Then you need to see the Océ Colorado.");
         
     }
     if(btn_info[2] == '1'){
         window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("I like you, you are cool.  Would you like to rent me? ");
+            window.external.PlaySpeech("Hi there, do you know how E Z it is to get an Océ Colorado? ");
     }
     if(btn_info[3] == '1'){
         window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Ha, ha.  That tickles.  Good luck on winning a great prize.");
+        window.external.PlaySpeech("Hey why don't you take a break, come on in and see our next presentation from Canon See Impossible.");
         
     }
 }
