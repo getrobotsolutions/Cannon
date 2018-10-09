@@ -54,7 +54,11 @@ function FC_ContentsCall(strContentsName, strLanguage)
 
         case "Selfie":
             //PlaySpeech(speak[6]);
-            location.href = "Contents/Selfie/index.html";
+            location.href = "../../Contents/Selfie/index.html";
+            break;
+        case "TakePhotos":
+            //PlaySpeech(speak[]);
+            location.href = "Contents/TakePhotos/index.html";
             break;
         case "Slot-machine":
             //PlaySpeech(speak[7]);
@@ -66,7 +70,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             break;
         case "Avatar":
             //PlaySpeech(speak[9]);
-            location.href = "Contents/RobotAvatar/index.htm";
+            location.href = "../../Contents/RobotAvatar/index.htm";
             break;
         case "Config":
             location.href = "Config/Config.htm";
