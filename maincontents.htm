@@ -75,7 +75,7 @@
                     var array = barcode.split("Ü");
 
                     document.getElementById("scan").value = array;
-                    if(array.length === 4)
+                    if(array.length === 3)
                     {
                         alert(array);
                         PlaySpeech("Hi" + array[2] + " " + array[3] +", welcome to the Cannon show.");
