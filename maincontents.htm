@@ -74,11 +74,11 @@
                     barcode = barcode.split('').join('')
                     var array = barcode.split("Ü");
 
-                    document.getElementById("scan").value = array;
-                    if(array.length === 3)
+                    //document.getElementById("scan").value = array;
+                    if(array.length === 4)
                     {
                         alert(array);
-                        PlaySpeech("Hi" + array[2] + " " + array[3] +", welcome to the Cannon show.");
+                        PlaySpeech("Hi" + array[2] +", welcome to the Cannon show.");
                     }
                 }
             });
