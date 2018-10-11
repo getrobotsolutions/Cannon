@@ -79,7 +79,8 @@
                     {
                         //alert(array);
                         var fname = array[2].toString();
-                        PlaySpeech("Hi" + fname  +", welcome to the Cannon show.");
+                        fname = fname.toLowerCase();
+                        PlaySpeech("Hi" + fname +", welcome to the Cannon show.");
                     }
                 }
             });
