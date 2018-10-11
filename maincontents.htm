@@ -77,8 +77,9 @@
                     //document.getElementById("scan").value = array;
                     if(array.length === 4)
                     {
-                        alert(array);
-                        PlaySpeech("Hi" + array[2].toString()  +", welcome to the Cannon show.");
+                        //alert(array);
+                        var fname = array[2].toString();
+                        PlaySpeech("Hi" + fname  +", welcome to the Cannon show.");
                     }
                 }
             });
