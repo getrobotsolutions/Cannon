@@ -58,6 +58,7 @@
     <script>
         $(document).ready(function() {
             var barcode="";
+            var i = 0;
             $(document).keydown(function(e) {
                 var code = (e.keyCode ? e.keyCode : e.which);
                 if(code==13)// Enter key hit
@@ -71,16 +72,23 @@
                 else
                 {
                     barcode=barcode+String.fromCharCode(code);
-                    barcode = barcode.split('').join('')
+                    barcode = barcode.split('').join('');
                     var array = barcode.split("Ü");
 
-                    //document.getElementById("scan").value = array;
-                    if(array.length === 4)
+                    if(String.fromCharCode(code) === "Ü")
                     {
-                        //alert(array);
-                        var fname = array[2].toString().toLowerCase();
-                        PlaySpeech("Hi " + fname +", welcome to the Cannon show.");
+                        i++;
+                        if(i === 4)
+                        {
+                           // alert(array);
+                            i = 0;
+                            barcode = "";
+                            var fname = array[2].toString().toLowerCase();
+                            var lname = array[3].toString().toLowerCase();
+                            PlaySpeech("Hi " + fname + " " + lname + ", welcome to the Cannon show.");
+                        }
                     }
+
                 }
             });
         });
