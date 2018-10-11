@@ -98,10 +98,10 @@ nav .nav-language button {
 	width: 310px;
 	height: 320px;
 	border: none;
-	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	
 	font-size: 40px;
-	text-align: center;background-size: cover;
+	text-align: center;background-color: #b90b02;
 	
 	border-color: white;
 }
@@ -111,12 +111,7 @@ nav .nav-language button {
 	font-weight: bold;
 	display: block;
 	font-size: 40px;
-    line-height: 40px;
-    width: 310px;
-    height: 320px;
-    padding-top: 85px;
-    background-color: rgba(0, 0, 0, 0.55);
-
+    line-height: 40px;  
 }
 
 .main-menu-matrix table button img {
