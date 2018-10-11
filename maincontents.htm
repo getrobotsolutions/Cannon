@@ -11,9 +11,8 @@
     <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
     <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
     <!--<script language="JavaScript" type="text/javascript" src="maincontents.js"></script>-->
-    <script src="boots/js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src="jquery-code-scanner.js"></script>
-    <script type="text/javascript" src="code-scanner.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.js'></script>
     <link rel="stylesheet" href="boots/css/bootstrap.min.css">
 
     <link href="css/Main.css" rel="stylesheet" type="text/css"/>
@@ -55,16 +54,36 @@
     ">
        PRESS HERE TO CONTINUE WITHOUT SCANNING
   </div>-->
-  <form class="" style="     position: absolute;
-    bottom: 100px;   margin-left: -300px;">
-                <div >
-                    <label class="" for="code-scan"></label>
-                    <div class="" style="">
-                        <textarea id="bar_code" style=""></textarea>
-                        <button id="submit" class="submit">Click</button>
-                    </div>
-                </div>
-            </form>
+
+    <script>
+        $(document).ready(function() {
+            var barcode="";
+            $(document).keydown(function(e) {
+                var code = (e.keyCode ? e.keyCode : e.which);
+                if(code==13)// Enter key hit
+                {
+                    alert(barcode);
+                }
+                else if(code==9)// Tab key hit
+                {
+                    alert(barcode);
+                }
+                else
+                {
+                    barcode=barcode+String.fromCharCode(code);
+                    barcode = barcode.split('').join('')
+                    var array = barcode.split("Ü");
+
+                    document.getElementById("scan").value = array;
+                    if(array.length === 4)
+                    {
+                        PlaySpeech("Hi" + array[2] + " " + array[3] +", welcome to the Cannon show.");
+                    }
+                }
+            });
+        });
+    </script>
+
 </footer>
 <div id="dialog-overlay"></div>
 <div id="dialog-box">
