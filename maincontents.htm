@@ -75,7 +75,7 @@
                     var fname = array[2].toString().toLowerCase();
                     var lname = array[3].toString().toLowerCase();
 
-                    if(fname.match(numbers) === true || lname.match(numbers) === true)
+                    if(array[2].match(numbers) === true || array[3].match(numbers) === true)
                     {
                         i = 0;
                         barcode = "";
@@ -86,11 +86,11 @@
                         if(i === 4)
                         {
                            // alert(array);
-                            i = 0;
-                            barcode = "";
 
                             PlaySpeech("Hi " + fname + " " + lname + ", welcome to the Cannon show.");
-
+                            i = 0;
+                            barcode = "";
+                            array = null;
                         }
                     }
 
