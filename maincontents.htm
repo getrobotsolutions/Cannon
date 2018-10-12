@@ -59,13 +59,10 @@
         $(document).ready(function() {
             var barcode="";
             var i = 0;
+            var numbers = /^[0-9]+$/;
             $(document).keydown(function(e) {
                 var code = (e.keyCode ? e.keyCode : e.which);
                 if(code==13)// Enter key hit
-                {
-                    alert(barcode);
-                }
-                else if(code==9)// Tab key hit
                 {
                     alert(barcode);
                 }
@@ -75,6 +72,15 @@
                     barcode = barcode.split('').join('');
                     var array = barcode.split("Ü");
 
+                    var fname = array[2].toString().toLowerCase();
+                    var lname = array[3].toString().toLowerCase();
+
+                    if(fname.match(numbers) === true || lname.match(numbers) === true)
+                    {
+                        i = 0;
+                        barcode = "";
+                    }
+                    
                     if(String.fromCharCode(code) === "Ü")
                     {
                         i++;
@@ -83,9 +89,9 @@
                            // alert(array);
                             i = 0;
                             barcode = "";
-                            var fname = array[2].toString().toLowerCase();
-                            var lname = array[3].toString().toLowerCase();
+
                             PlaySpeech("Hi " + fname + " " + lname + ", welcome to the Cannon show.");
+
                         }
                     }
 
