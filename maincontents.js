@@ -238,4 +238,7 @@ function OnJoystickControlled(strPara){
         window.external.PlaySpeech("Hey why don't you take a break, come on in and see our next presentation from Canon See Impossible.");
         
     }
+    if(btn_info[4] == '1'){
+        FC_ContentsCall('Home')
+    }
 }
