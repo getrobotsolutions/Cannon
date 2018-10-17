@@ -72,10 +72,10 @@
                     var lname = array[3].toString().toLowerCase();
                     PlaySpeech("Hi " + fname + " " + lname + ", welcome to the Cannon booth.");
                     
-                    var dataString =  { 'CsiMarker' : csi, 'BadgeNumber' : bnumber,'FirstName' :fname, 'LastName' : lname};
+                    var dataString =  { 'CsiMarker' : csi, 'BadgeNumber' : bnumber, 'FirstName' :fname, 'LastName' : lname};
                     $.ajax({
                       url:"https://robotaisolutions.com/amgen/cannonApi.php",
-                      type:"get",
+                      type:"post",
                       data : dataString,
                       
                       
