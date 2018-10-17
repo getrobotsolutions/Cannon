@@ -303,3 +303,6 @@ iframe{border: none;}
 #myVideo {
     width: 1080px;
 }
+.wrap video{
+	margin-top: 200px;
+}
