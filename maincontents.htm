@@ -70,18 +70,9 @@
                     var bnumber = array[1].toString().toLowerCase();
                     var fname = array[2].toString().toLowerCase();
                     var lname = array[3].toString().toLowerCase();
-                    PlaySpeech("Hi " + fname + " " + lname + ", welcome to the Cannon show.");
-                    saveScannedData(csi,bnumber,fname,lname);
-                    barcode = "";
-                    array = null;
-                    location.href = "main.htm"
-                }
-                else
-                {
-                    barcode=barcode+String.fromCharCode(code);
-                }
-                function saveScannedData(csiMarker, badge_number, firstName, lastName){
-                    var dataString =  { 'CsiMarker' : csiMarker, 'BadgeNumber' : badge_number,'FirstName' :firstName, 'LastName' : lastName};
+                    PlaySpeech("Hi " + fname + " " + lname + ", welcome to the Cannon booth.");
+                    
+                    var dataString =  { 'CsiMarker' : csi, 'BadgeNumber' : bnumber,'FirstName' :fname, 'LastName' : lname};
                     $.ajax({
                       url:"https://robotaisolutions.com/amgen/cannonApi.php",
                       type:"get",
@@ -93,14 +84,20 @@
                           console.log(data);
                           if(data.response=='error'){
                             //alert("Welcome back");
-                            //window.external.PlaySpeech("welcome back" +firstName + " " + lastName +"to the CDS booth");
-
+                            
                           }
-                          //window.external.PlaySpeech("welcome" +firstName + " " + lastName +"to the CDS booth");
+                         
                         }
                     });
-
+                    barcode = "";
+                    array = null;
+                    location.href = "main.htm"
                 }
+                else
+                {
+                    barcode=barcode+String.fromCharCode(code);
+                }
+                
             });
         });
     </script>
