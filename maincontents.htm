@@ -70,7 +70,6 @@
                     var bnumber = array[1].toString().toLowerCase();
                     var fname = array[2].toString().toLowerCase();
                     var lname = array[3].toString().toLowerCase();
-                    PlaySpeech("Hi " + fname + " " + lname + ", welcome to the Cannon booth.");
                     
                     var dataString =  { 'CsiMarker' : csi, 'BadgeNumber' : bnumber, 'FirstName' :fname, 'LastName' : lname};
                     $.ajax({
@@ -88,6 +87,8 @@
                          
                         }
                     });
+                    PlaySpeech("Hi " + fname + " " + lname + ", welcome to the Cannon booth.");
+                    
                     barcode = "";
                     array = null;
                     location.href = "main.htm"
@@ -96,7 +97,27 @@
                 {
                     barcode=barcode+String.fromCharCode(code);
                 }
-                
+                /*var csi = "test0";//array[0].toString().toLowerCase();
+                    var bnumber = "test1";//array[1].toString().toLowerCase();
+                    var fname = "test2";//array[2].toString().toLowerCase();
+                    var lname = "test3";//array[3].toString().toLowerCase();
+                var dataString =  { 'CsiMarker' : csi, 'BadgeNumber' : bnumber, 'FirstName' :fname, 'LastName' : lname};
+                    $.ajax({
+                      url:"https://robotaisolutions.com/amgen/cannonApi.php",
+                      type:"post",
+                      data : dataString,
+                      
+                      
+                        success: function(data) {
+                          console.log(data);
+                          if(data.response=='error'){
+                            //alert("Welcome back");
+                            
+                          }
+                         
+                        }
+                    });
+                */
             });
         });
     </script>
