@@ -230,7 +230,7 @@ function OnJoystickControlled(strPara){
     if(btn_info[2] == '1'){
         window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Hi there, do you know how E Z it is to get an Océ Colorado? ");
+            window.external.PlaySpeech("Hi there, my name is Hannah, why don't you take a break and watch one of my videos. Just push the button on my screen!");
     }
     if(btn_info[3] == '1'){
         window.external.ChangeLanguage("en-us");
