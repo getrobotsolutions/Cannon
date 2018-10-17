@@ -87,7 +87,7 @@ function LanguageChange(lang)
 var refreshIntervalId ;
 	function JSMain() {
 		refreshIntervalId = setInterval("test()", 33);
-		//setTimeout("Init()",3000);
+		setTimeout("Init()",3000);
 	}
 
 	function Init(){	
