@@ -1,3 +1,13 @@
+tr{
+  width: 1080px;
+  display:block;
+}
+td{
+  width: 532px;
+    display: block;
+    float: left;
+    text-align: center;
+}
 .bmg{
 
     height: 1158px;
