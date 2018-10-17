@@ -306,3 +306,6 @@ iframe{border: none;}
 .wrap video{
 	margin-top: 200px;
 }
+.wrap video::-webkit-media-controls-fullscreen-button {
+display: none;
+}

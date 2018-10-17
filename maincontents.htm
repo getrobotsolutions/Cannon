@@ -12,7 +12,7 @@
     <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
     <script src="boots/js/bootstrap.min.js"></script>
-    <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.js'></script>
+    <!--<script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.js'></script>-->
     <link rel="stylesheet" href="boots/css/bootstrap.min.css">
 
     <link href="css/Main.css" rel="stylesheet" type="text/css"/>
@@ -80,16 +80,17 @@
                         success: function(data) {
                           console.log(data);
                           if(data.response=='success'){
-                            
+                            PlaySpeech("Hi " + fname + " " + lname + ", welcome to the Cannon booth.");
+                            barcode = "";
+                            array = null;
+                            location.href = "main.htm";
                           }
                          
                         }
                     });
-                    PlaySpeech("Hi " + fname + " " + lname + ", welcome to the Cannon booth.");
                     
-                    barcode = "";
-                    array = null;
-                    location.href = "main.htm"
+                    
+                    
                 }
                 else
                 {
