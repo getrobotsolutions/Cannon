@@ -8,7 +8,7 @@
         speak[4] = "Find out what classes you need for your major.";
         speak[5] = "";
         speak[6] = "Say Cheese! ";
-        speak[7] = "";
+        speak[7] = "Try your luck! spin the slot machine once and try to win a great prize";
         speak[8] = "Pick a song and let’s boogie!";
         speak[9] = "Smile! You are about to become a robot.";
 
@@ -61,7 +61,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/TakePhotos/index.html";
             break;
         case "Slot-machine":
-            //PlaySpeech(speak[7]);
+            PlaySpeech(speak[7]);
             location.href = "Contents/SlotMachine/index.html";
             break;
         case "Dance":
