@@ -239,6 +239,6 @@ function OnJoystickControlled(strPara){
         
     }
     if(btn_info[4] == '1'){
-        FC_ContentsCall('Home')
+        FC_ContentsCall('Home');
     }
 }
