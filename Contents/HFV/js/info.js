@@ -9,7 +9,7 @@ var initial=setTimeout(redirect,60000);
 
 $(document).click(function(event) {
     clearTimeout( initial );
-    initial=setTimeout(redirect,60000);
+    initial=setTimeout(redirect,180000);
 });
 //-----------------------------------------------------
 
